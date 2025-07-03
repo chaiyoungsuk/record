@@ -1,0 +1,7 @@
+<template>
+    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+</template>
+
+<script setup>
+</script>

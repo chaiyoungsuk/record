@@ -1,0 +1,247 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": 431,
+    "database": 16,
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [
+      "aqwsOoLyuXZummMV0NnbY"
+    ],
+    "relationshipIds": [],
+    "indexIds": [],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "aqwsOoLyuXZummMV0NnbY": {
+        "id": "aqwsOoLyuXZummMV0NnbY",
+        "name": "schedule",
+        "comment": "스케줄",
+        "columnIds": [
+          "3FLmU3gBD28opjXj6xjHN",
+          "bizbb8K96FbJYAKBdCZYI",
+          "2TiXjc3HQJQ-RSItup7BP",
+          "riJG8MXScHtdv_ypT4PpD",
+          "9fmlveEfvlSXaqlxVp82n",
+          "KJhWfMkDGIpqcTGEaMNqK",
+          "1onL_Hm6D_7bKDiokNaC8",
+          "ICzhydzi_gnEKWBqsFUmM"
+        ],
+        "seqColumnIds": [
+          "3FLmU3gBD28opjXj6xjHN",
+          "bizbb8K96FbJYAKBdCZYI",
+          "2TiXjc3HQJQ-RSItup7BP",
+          "riJG8MXScHtdv_ypT4PpD",
+          "9fmlveEfvlSXaqlxVp82n",
+          "KJhWfMkDGIpqcTGEaMNqK",
+          "1onL_Hm6D_7bKDiokNaC8",
+          "ICzhydzi_gnEKWBqsFUmM"
+        ],
+        "ui": {
+          "x": 200,
+          "y": 100,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1749024804177,
+          "createAt": 1749023617459
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "3FLmU3gBD28opjXj6xjHN": {
+        "id": "3FLmU3gBD28opjXj6xjHN",
+        "tableId": "aqwsOoLyuXZummMV0NnbY",
+        "name": "seq",
+        "comment": "sequence",
+        "dataType": "INTEGER",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1749024889321,
+          "createAt": 1749024308186
+        }
+      },
+      "bizbb8K96FbJYAKBdCZYI": {
+        "id": "bizbb8K96FbJYAKBdCZYI",
+        "tableId": "aqwsOoLyuXZummMV0NnbY",
+        "name": "user_id",
+        "comment": "사용자 아이디",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 77,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1749024419383,
+          "createAt": 1749024385409
+        }
+      },
+      "2TiXjc3HQJQ-RSItup7BP": {
+        "id": "2TiXjc3HQJQ-RSItup7BP",
+        "tableId": "aqwsOoLyuXZummMV0NnbY",
+        "name": "title",
+        "comment": "제목",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1749024834241,
+          "createAt": 1749024589865
+        }
+      },
+      "riJG8MXScHtdv_ypT4PpD": {
+        "id": "riJG8MXScHtdv_ypT4PpD",
+        "tableId": "aqwsOoLyuXZummMV0NnbY",
+        "name": "start_date",
+        "comment": "시작일시",
+        "dataType": "timestamp",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1749025006188,
+          "createAt": 1749024598649
+        }
+      },
+      "9fmlveEfvlSXaqlxVp82n": {
+        "id": "9fmlveEfvlSXaqlxVp82n",
+        "tableId": "aqwsOoLyuXZummMV0NnbY",
+        "name": "end_date",
+        "comment": "종료일시",
+        "dataType": "timestamp",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1749025009617,
+          "createAt": 1749024606233
+        }
+      },
+      "KJhWfMkDGIpqcTGEaMNqK": {
+        "id": "KJhWfMkDGIpqcTGEaMNqK",
+        "tableId": "aqwsOoLyuXZummMV0NnbY",
+        "name": "background_color",
+        "comment": "이벤트 바탕 색",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 97,
+          "widthComment": 81,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1749024879217,
+          "createAt": 1749024616073
+        }
+      },
+      "1onL_Hm6D_7bKDiokNaC8": {
+        "id": "1onL_Hm6D_7bKDiokNaC8",
+        "tableId": "aqwsOoLyuXZummMV0NnbY",
+        "name": "border_color",
+        "comment": "이벤트 테두리 색",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 69,
+          "widthComment": 93,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1749024880362,
+          "createAt": 1749024618777
+        }
+      },
+      "ICzhydzi_gnEKWBqsFUmM": {
+        "id": "ICzhydzi_gnEKWBqsFUmM",
+        "tableId": "aqwsOoLyuXZummMV0NnbY",
+        "name": "text_color",
+        "comment": "글자 색",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1749024882311,
+          "createAt": 1749024804177
+        }
+      }
+    },
+    "relationshipEntities": {},
+    "indexEntities": {},
+    "indexColumnEntities": {},
+    "memoEntities": {}
+  }
+}

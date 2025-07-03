@@ -1,0 +1,224 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": 431,
+    "database": 16,
+    "databaseName": "",
+    "canvasType": "@dineug/erd-editor/builtin-schema-sql",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [
+      "EBGfJWjadfiGpHAHUQHyA"
+    ],
+    "relationshipIds": [],
+    "indexIds": [],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "EBGfJWjadfiGpHAHUQHyA": {
+        "id": "EBGfJWjadfiGpHAHUQHyA",
+        "name": "web_toon",
+        "comment": "웹툰",
+        "columnIds": [
+          "Mghxu0Yp4Jzb8Evtq28fJ",
+          "u4jQi1OnT5I9Jl6JjVxfr",
+          "Yg6JxpiEpi8zWOWxRbwVx",
+          "WgvdQzNc0bbHq4H4rGlnD",
+          "8qrOLLAHcUwHdt6RTL8Pc",
+          "d2KDJx5QTTwOt09yIMHBw"
+        ],
+        "seqColumnIds": [
+          "Mghxu0Yp4Jzb8Evtq28fJ",
+          "u4jQi1OnT5I9Jl6JjVxfr",
+          "Yg6JxpiEpi8zWOWxRbwVx",
+          "WgvdQzNc0bbHq4H4rGlnD",
+          "8qrOLLAHcUwHdt6RTL8Pc",
+          "d2KDJx5QTTwOt09yIMHBw",
+          "dk94pyIS1HXszChq6_xMC"
+        ],
+        "ui": {
+          "x": 162,
+          "y": 127,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1750235634093,
+          "createAt": 1750235336052
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "Mghxu0Yp4Jzb8Evtq28fJ": {
+        "id": "Mghxu0Yp4Jzb8Evtq28fJ",
+        "tableId": "EBGfJWjadfiGpHAHUQHyA",
+        "name": "seq",
+        "comment": "시퀀스",
+        "dataType": "INTEGER",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1750235474371,
+          "createAt": 1750235402570
+        }
+      },
+      "u4jQi1OnT5I9Jl6JjVxfr": {
+        "id": "u4jQi1OnT5I9Jl6JjVxfr",
+        "tableId": "EBGfJWjadfiGpHAHUQHyA",
+        "name": "title",
+        "comment": "제목",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1750235669034,
+          "createAt": 1750235477673
+        }
+      },
+      "Yg6JxpiEpi8zWOWxRbwVx": {
+        "id": "Yg6JxpiEpi8zWOWxRbwVx",
+        "tableId": "EBGfJWjadfiGpHAHUQHyA",
+        "name": "volume",
+        "comment": "권(몇권)",
+        "dataType": "INTEGER",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1750235523588,
+          "createAt": 1750235491250
+        }
+      },
+      "WgvdQzNc0bbHq4H4rGlnD": {
+        "id": "WgvdQzNc0bbHq4H4rGlnD",
+        "tableId": "EBGfJWjadfiGpHAHUQHyA",
+        "name": "parent_seq",
+        "comment": "부모시퀀스",
+        "dataType": "INTEGER",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 62,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1750235554963,
+          "createAt": 1750235526154
+        }
+      },
+      "8qrOLLAHcUwHdt6RTL8Pc": {
+        "id": "8qrOLLAHcUwHdt6RTL8Pc",
+        "tableId": "EBGfJWjadfiGpHAHUQHyA",
+        "name": "image_path",
+        "comment": "이미지 경로",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 64,
+          "widthComment": 65,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1750235673666,
+          "createAt": 1750235557250
+        }
+      },
+      "d2KDJx5QTTwOt09yIMHBw": {
+        "id": "d2KDJx5QTTwOt09yIMHBw",
+        "tableId": "EBGfJWjadfiGpHAHUQHyA",
+        "name": "file_name",
+        "comment": "이미지 명(확장자 포함)",
+        "dataType": "varchar",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 124,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1750235674782,
+          "createAt": 1750235588203
+        }
+      },
+      "dk94pyIS1HXszChq6_xMC": {
+        "id": "dk94pyIS1HXszChq6_xMC",
+        "tableId": "EBGfJWjadfiGpHAHUQHyA",
+        "name": "",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1750235603089,
+          "createAt": 1750235603089
+        }
+      }
+    },
+    "relationshipEntities": {},
+    "indexEntities": {},
+    "indexColumnEntities": {},
+    "memoEntities": {}
+  }
+}

@@ -21,11 +21,13 @@
     "bootstrap": "^5.3.6",
     "bootstrap-vue-3": "^0.5.1",
     "core-js": "^3.8.3",
+    "html2pdf.js": "^0.10.3",
     "vue": "^3.5.16",
     "vue-class-component": "^8.0.0-rc.1",
     "vue-froala-wysiwyg": "^4.5.2",
     "vue-router": "^4.5.1",
     "vue3-colorpicker": "^2.3.0",
+    "vue3-html2pdf": "^1.1.2",
     "vue3-simple-alert": "^1.0.4",
     "vue3-tree": "^0.11.5"
   },

@@ -38,12 +38,17 @@ require('@/assets/css/popup.css')
 import Vue3ColorPicker from "vue3-colorpicker";
 import "vue3-colorpicker/style.css";
 
+import html2pdf from 'html2pdf.js';
+
+
+
+
 const recordAdminApp = createApp(App)
 
 recordAdminApp.provide('VueSimpleAlert', VueSimpleAlert)
 recordAdminApp.provide('api',api)
 recordAdminApp.provide('Tree',Tree)
-
+recordAdminApp.provide('html2pdf',html2pdf)
 
 recordAdminApp
 .use(router)

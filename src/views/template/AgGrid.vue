@@ -44,7 +44,9 @@
                                 :columnDefs="columnDefs"
                                 :rowData="rowData"
                                 :onRowClicked="onRowClicked"
-                                :onRowValueChanged="onRowValueChanged">
+                                :onRowValueChanged="onRowValueChanged"
+                                @cellValueChanged="onColumnValueChanged"
+                                >
                             </ag-grid-vue>
                         </div>
                     </div>
@@ -55,10 +57,15 @@
 </template>
 
 <script setup>
-import { reactive } from "vue";
-import { AgGridVue } from "ag-grid-vue3";
+import { inject, reactive } from "vue";
+// import { AgGridVue } from "ag-grid-vue3";
 
-import { AllCommunityModule, ModuleRegistry } from 'ag-grid-community';
+// import { AllCommunityModule, ModuleRegistry } from 'ag-grid-community';
+
+const AgGridVue = inject('AgGridVue');
+const AllCommunityModule = inject('AllCommunityModule');
+const ModuleRegistry = inject('ModuleRegistry');
+
 ModuleRegistry.registerModules([AllCommunityModule]);
 
 const columnDefs = reactive([
@@ -80,4 +87,9 @@ const onRowClicked = (row) => {
 const onRowValueChanged  = (row) => {
     console.log('rowValueChanged row' , row)
 }
+
+const onColumnValueChanged = (data) => {
+    console.log('onColumnValueChanged' , data)
+}
+
 </script>

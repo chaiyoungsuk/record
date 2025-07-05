@@ -46,6 +46,8 @@ const searchReferenceGroupSuc = (res) => {
 
     let referenceGroupList = res.resultData.referenceGroupList;
     state.referenceGroup = utils.json.toHierarchy(referenceGroupList , 999999);
+
+    state.referenceGroup[0].expanded = true
 }
 
 const onUpdate = (node) => { 

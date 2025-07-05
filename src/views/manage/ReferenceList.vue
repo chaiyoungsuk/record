@@ -202,7 +202,9 @@ const loadReferenceGroupSuc = (res) => {
 
     state.referenceGroup = utils.json.toHierarchy(referenceGroupList , 999999);
 
-    console.log('referenceGroup' , state.referenceGroup);
+
+    state.referenceGroup[0].expanded = true
+    
 }
 
 const searchReferenceList = (p) =>{

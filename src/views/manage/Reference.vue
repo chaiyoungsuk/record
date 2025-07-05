@@ -42,7 +42,7 @@
                                     <p><span>Date Regist:</span> {{reference.regist_date}} </p>
                                 </div>
                             </div>
-                            <div class="note-wrapper warning-alert py-4 px-sm-3 px-lg-5">
+                            <div class="note-wrapper warning-alert py-4 px-sm-3 px-lg-5" ref="pdfContents">
                                 <p v-html=reference.data style="font-family: 맑은고딕;font-size:14px"></p>  
                             </div>
                             <div class="row"> 
@@ -61,6 +61,9 @@
                                         <li>
                                             <a class="main-btn danger-btn-light square-btn btn-hover" @click="deleteReference">삭제</a>
                                         </li>
+                                        <li>
+                                            <a class="main-btn danger-btn-light square-btn btn-hover" @click="onPdfFileDownload">DownLoad</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -73,13 +76,15 @@
 </template>
 
 <script setup>
-import { reactive , onMounted , inject} from 'vue';
+import { ref , reactive , onMounted , inject } from 'vue';
 import { useRouter , useRoute} from 'vue-router'
 
 const router = useRouter()
 const route = useRoute()
 const api = inject('api');
 const VueSimpleAlert = inject('VueSimpleAlert')
+const html2pdf = inject('html2pdf')
+const pdfContents = ref(null)
 
 const state = reactive({
     seq : route.query.seq
@@ -147,6 +152,11 @@ const deleteReferenceSuc = (res) =>{
     .then( () => {
         moveReferenceList()
     })
+}
+
+const onPdfFileDownload = () => { 
+    const element = pdfContents.value;
+    html2pdf().from(element).save(reference.group_name + '_' + reference.title + '.pdf');
 }
 
 onMounted(() => {

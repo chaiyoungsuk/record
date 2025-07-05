@@ -38,19 +38,17 @@ require('@/assets/css/popup.css')
 import Vue3ColorPicker from "vue3-colorpicker";
 import "vue3-colorpicker/style.css";
 
-//AgGrid
-import { AgGridVue } from "ag-grid-vue3";
-import { AllCommunityModule, ModuleRegistry } from 'ag-grid-community';
+import html2pdf from 'html2pdf.js';
+
+
+
 
 const recordAdminApp = createApp(App)
 
 recordAdminApp.provide('VueSimpleAlert', VueSimpleAlert)
 recordAdminApp.provide('api',api)
 recordAdminApp.provide('Tree',Tree)
-recordAdminApp.provide('AgGridVue',AgGridVue)
-recordAdminApp.provide('AllCommunityModule',AllCommunityModule)
-recordAdminApp.provide('ModuleRegistry',ModuleRegistry)
-
+recordAdminApp.provide('html2pdf',html2pdf)
 
 recordAdminApp
 .use(router)
